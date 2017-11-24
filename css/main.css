@@ -99,7 +99,21 @@ a.active{
     font-weight: bold;
     text-align: center;
     color: rgb(31, 73, 125);
+}
 
+.subtitle {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    /*line-height: 1.5;*/
+    font-weight: bold;
+    text-align: center;
+    color: rgb(31, 73, 125);
+}
+
+.maps {
+    text-align: center;
 }
 
 #intro {
@@ -118,6 +132,18 @@ a.active{
     margin: 0 auto;
 }
 
+#email {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    color: #005596;
+    text-align: center;
+    text-decoration: none;
+}
+
+#contact-content {
+    background: #e7edf3;
+    padding-bottom: 5%;
+}
 
 @font-face {
     font-family: 'si';
