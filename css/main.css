@@ -67,7 +67,7 @@ body {
 
 }
 
-.active{
+a.active{
     /*text-decoration: underline;*/
     color: #005596;
     border-bottom: 2px solid #005596;
@@ -89,6 +89,17 @@ body {
     font-size: 1.2em;
     color: #111111;    
     line-height: 1.5;
+}
+
+.quote {
+    font-family: "Open Sans", sans-serif;
+    padding: 10%;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(31, 73, 125);
+
 }
 
 #intro {
