@@ -8,41 +8,72 @@
 
 
 
+body {
+    width: 80%;
+    margin: 0 auto !important;
+    background: #efefef;
+}
+
 
 #header {
-    margin: 0 1px;
+    /*margin: 0 1px;*/
 }
 
 #main-content {
     margin:0 auto;
+    /*background: #ffffff;*/
 }
 
 #nav {
-    background: #005596;
-    padding: 10px 20px;
+    /*background: #005596;*/
+    /*background: #ffffff;*/
+    /*padding: 10px 20px;*/
+    /*padding: 1.6rem;*/
+    padding: 1.6rem 0 1.6rem 1.6rem;
     text-align: right;
     font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    color: #ffffff;
+    font-family: "Open Sans", sans-serif !important;
+    color: #f3f3f3 !important;
     direction: ltr;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /*border: 1px solid green;*/
+    font-size: 0;
 }
 
 #nav a{
-    margin: 0 10px;
+    /*margin: 0 0;*/
     text-transform: uppercase;
+    /*font-size: 1.2em;*/
+    font: normal 12pt Arial, sans-serif;
+    font-weight: bold;
+    color: #005596;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*border: 1px solid green;*/
 }
 
 #nav a:visited, #nav a:link {
     text-decoration: none;
-    color: #ffffff;    
+    /*color: #ffffff;    */
 }
 
-#nav a:hover {
-    text-decoration: underline;
-    color: #ffffff;    
+#nav a:hover{
+    /*text-decoration: underline;*/
+    color: #005596;
+    border-bottom: 2px solid #005596;
+
 }
+
+.active{
+    /*text-decoration: underline;*/
+    color: #005596;
+    border-bottom: 2px solid #005596;
+
+}
+
 
 .title {
     font-family: "Open Sans", sans-serif;
@@ -66,11 +97,14 @@
 
 #footer {
     position:absolute;
-    bottom:0;
-    width: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -93,7 +127,7 @@
     }
 }
 
-.soc {
+/*.soc {
     overflow:hidden;
     margin:0; padding:0;
     list-style:none;
@@ -103,9 +137,15 @@
     display:inline-block;
     *display:inline;
     zoom:1;
-}
+}*/
 
-.soc li a {
+/*.soc li a {*/
+.soc {
+/*    overflow: hidden;
+    margin:0; padding: 0;*/
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
     font-family:si;
     font-style:normal;
     font-weight:400;
@@ -119,7 +159,7 @@
     overflow:hidden;
     text-decoration:none;
     text-align:center;
-    display:block;
+    /*display:block;*/
     position: relative;
     z-index: 1;
     width: 42px;
@@ -138,13 +178,18 @@
     margin:0 !important;
 }
 
+
+.soc-initial-color {
+    background-color: #a9a9a9;
+}
 /* 
 can probably conglomerate all the original colors into 1 tag under .soc
 NEED TO ORIENT AND FIX THIS MESS!
 */
-.soc-linkedin {
+
+/*.soc-linkedin {
     background-color: #a9a9a9;
-}
+}*/
 
 .soc-linkedin:before {
     content:'\e049';
@@ -155,10 +200,11 @@ NEED TO ORIENT AND FIX THIS MESS!
 }
 
 .soc-github {
-    background-color: #a9a9a9;
+    /*background-color: #a9a9a9;*/
     padding-right: 1px;
     padding-top: 2px;
 }
+
 .soc-github:before {
     content:'\e030';
 }
@@ -178,21 +224,14 @@ NEED TO ORIENT AND FIX THIS MESS!
     font-style: normal;
 }
 
-.icon {
-    overflow:hidden;
-    margin:0; padding:0;
-    list-style:none;
-}
-
-.icon li {
-    display:inline-block;
-    *display:inline;
-    zoom:1;
-}
 /* https://glyphter.com/ */
 
-.icon li a {
+/*.icon li a {*/
+.icon-ext {
     display: inline-block;
+    *display: inline;
+    zoom: 1;
+    /*display: inline-block;*/
     font-family: 'Glyphter';
     font-style:normal;
     font-weight:400;
@@ -206,7 +245,7 @@ NEED TO ORIENT AND FIX THIS MESS!
     overflow:hidden;
     text-decoration:none;
     text-align:center;
-    display:block;
+    /*display:block;*/
     position: relative;
     z-index: 1;
     width: 42px;
@@ -228,7 +267,7 @@ NEED TO ORIENT AND FIX THIS MESS!
 }
 
 .icon-ladodgers{
-    background: #a9a9a9;
+    /*background: #a9a9a9;*/
     font-family: "Glyphter";
 }
 
@@ -248,21 +287,14 @@ NEED TO ORIENT AND FIX THIS MESS!
     font-style: normal;
 }
 
-.icon2 {
-    overflow:hidden;
-    margin:0; padding:0;
-    list-style:none;
-}
-
-.icon2 li {
-    display:inline-block;
-    *display:inline;
-    zoom:1;
-}
 /* https://glyphter.com/ */
 
-.icon2 li a {
+/*.icon2 li a {*/
+.icon-ext2 {
     display: inline-block;
+    *display: inline;
+    zoom: 1;    
+    /*display: inline-block;*/
     font-family: 'Glyphter2';
     font-style:normal;
     font-weight:400;
@@ -276,7 +308,7 @@ NEED TO ORIENT AND FIX THIS MESS!
     overflow:hidden;
     text-decoration:none;
     text-align:center;
-    display:block;
+    /*display:block;*/
     position: relative;
     z-index: 1;
     width: 42px;
@@ -298,7 +330,7 @@ NEED TO ORIENT AND FIX THIS MESS!
 }
 
 .icon-caltech{
-    background: #a9a9a9;
+    /*background: #a9a9a9;*/
     font-family: "Glyphter2";
 }
 
