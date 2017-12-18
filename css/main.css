@@ -6,8 +6,7 @@
     line-height: 1.5;
 }
 
-
-
+/* Body text */
 body {
     width: 80%;
     margin: 0 auto !important;
@@ -16,12 +15,15 @@ body {
 
 
 #header {
-    /*margin: 0 1px;*/
+    /* margin: 0 1px; */
+    /* background: #ffffff; */
 }
 
 #main-content {
     margin:0 auto;
-    /*background: #ffffff;*/
+    background: #ffffff;
+    /* height: 1000px; */
+    overflow: hidden;
 }
 
 #nav {
@@ -69,7 +71,8 @@ body {
 
 a.active{
     /*text-decoration: underline;*/
-    color: #005596;
+    /* color: #005596; */
+    background: #fafdff; /*#f6f6f6;*/
     border-bottom: 2px solid #005596;
 
 }
