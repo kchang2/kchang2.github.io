@@ -6,31 +6,60 @@
     line-height: 1.5;
 }
 
-/* Body text */
-body {
-    width: 80%;
-    margin: 0 auto !important;
+html {
     background: #efefef;
 }
 
+img {
+    width:100%;
+    align: middle;
+}
 
-#header {
-    /* margin: 0 1px; */
-    /* background: #ffffff; */
+img.centered {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Body text */
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    background: #ffffff;
+}
+
+.empty-space {
+    height:100px;
+}
+
+.header {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    /*line-height: 1.5;*/
+    font-weight: bold;
+    /*text-align: center;*/
+    /*color: rgb(31, 73, 125);*/
+    color: #333;
+}
+
+#index-notes {
+    text-decoration: none;
+    color: #005596;
 }
 
 #main-content {
-    margin:0 auto;
+    margin-left: 60px;
+    margin-right: 60px;
     background: #ffffff;
     /* height: 1000px; */
     overflow: hidden;
 }
 
 #nav {
-    /*background: #005596;*/
-    /*background: #ffffff;*/
-    /*padding: 10px 20px;*/
-    /*padding: 1.6rem;*/
     padding: 1.6rem 0 1.6rem 1.6rem;
     text-align: right;
     font-weight: 600;
@@ -39,7 +68,9 @@ body {
     direction: ltr;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    /*border: 1px solid green;*/
+    /* border: 1px solid green; */
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 0;
 }
 
@@ -47,7 +78,7 @@ body {
     /*margin: 0 0;*/
     text-transform: uppercase;
     /*font-size: 1.2em;*/
-    font: normal 12pt Arial, sans-serif;
+    font: normal 11pt Arial, sans-serif;
     font-weight: bold;
     color: #005596;
     padding-top: 1.6rem;
@@ -85,6 +116,7 @@ a.active{
     text-align: center;
     color: #616161;
     font-weight: 600;
+    margin-top: 50px;
 }
 
 .text {
@@ -92,6 +124,7 @@ a.active{
     font-size: 1.2em;
     color: #111111;    
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .quote {
@@ -102,6 +135,15 @@ a.active{
     font-weight: bold;
     text-align: center;
     color: rgb(31, 73, 125);
+}
+
+.captions {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 25px;
 }
 
 .subtitle {
@@ -115,36 +157,25 @@ a.active{
     color: rgb(31, 73, 125);
 }
 
-.header {
-    font-family: "Open Sans", sans-serif;
-    padding-top: 50px;
-    padding-bottom: 28px;
-    font-size: 2em;
-    /*line-height: 1.5;*/
-    font-weight: bold;
-    /*text-align: center;*/
-    /*color: rgb(31, 73, 125);*/
-    color: #333;
-}
-
 .maps {
     text-align: center;
 }
 
 #intro {
-    margin-bottom: 10%;
+    margin-bottom: 25px;
 }
 
-#footer {
+.footer {
     position:absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     background-color: #efefef;
     text-align: center;
-    width: 80%;
-    margin: 0 auto;
+    /* width: 100%; */
+    /* margin: 0 auto; */
 }
 
 #email {
@@ -365,15 +396,14 @@ NEED TO ORIENT AND FIX THIS MESS!
     z-index: 1;
     width: 42px;
     height: 42px;
-    line-height: 42px;
-    font-size: 27px;
+    line-height: 39px;
+    font-size: 32px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
     margin-right: 12px;
     color: #ffffff;
-    padding-right: 8px;
-    padding-bottom: 2px;
+    padding-right: 12px;
     background-color: none;
 }
 
