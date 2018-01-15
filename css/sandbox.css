@@ -1,29 +1,15 @@
+/* adjust max width */
+.progress {
+    font-family: "Open Sans", sans-serif;
+    font-size: 4em;
+    color: #200864;    
+    line-height: 1.5;
+}
 
-/*** objects  ***/
-/* HTML */
 html {
     background: #efefef;
-    box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* Body */
-body {
-    width: 100%;
-    position: relative;
-    margin: 0 auto !important;
-    background: #ffffff;
-    padding-bottom: 6rem;
-    max-width: 1200px;
-    min-height: 100%;
-}
-
-/* images */
 img {
     width:100%;
     align: middle;
@@ -36,22 +22,30 @@ img.centered {
     margin-right: auto;
 }
 
-iframe {
+/* Body text */
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important;
     background: #ffffff;
-    margin-bottom: 40px;
 }
 
-/* classes */
+.empty-space {
+    height:100px;
+}
+
 .header {
     font-family: "Open Sans", sans-serif;
     padding-top: 50px;
     padding-bottom: 28px;
     font-size: 2em;
+    /*line-height: 1.5;*/
     font-weight: bold;
+    /*text-align: center;*/
+    /*color: rgb(31, 73, 125);*/
     color: #333;
 }
 
-/* IDs */
 #index-notes {
     text-decoration: none;
     color: #005596;
@@ -122,7 +116,7 @@ a.active{
     text-align: center;
     color: #616161;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .text {
@@ -130,25 +124,7 @@ a.active{
     font-size: 1.2em;
     color: #111111;    
     line-height: 1.5;
-}
-
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 1%;
-    margin-top: 20px;
-  }
-/* Create two equal columns that sits next to each other */
-.column {
-flex: 20%;
-padding: 0 1%;
-text-align: center;
-}
-
-.column img {
-margin-top: 8px;
-vertical-align: middle;
+    margin-bottom: 20px;
 }
 
 .quote {
@@ -170,18 +146,6 @@ vertical-align: middle;
     margin-bottom: 25px;
 }
 
-.links {
-    text-decoration: none;
-    font-weight: bold;
-    color: #063f6b;
-}
-
-.links-old {
-    text-decoration: none;
-    font-weight: bold;
-    color: #6c747b;
-}
-
 .subtitle {
     font-family: "Open Sans", sans-serif;
     padding-top: 50px;
@@ -191,16 +155,6 @@ vertical-align: middle;
     font-weight: bold;
     text-align: center;
     color: rgb(31, 73, 125);
-}
-
-.subtitle-left {
-    font-family: "Open Sans", sans-serif;
-    padding-top: 25px;
-    padding-bottom: 28px;
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(31, 73, 125);
-    text-align: left;
 }
 
 .maps {
@@ -230,6 +184,11 @@ vertical-align: middle;
     color: #005596;
     text-align: center;
     text-decoration: none;
+}
+
+#contact-content {
+    background: #fafafa;
+    padding-bottom: 5%;
 }
 
 @font-face {
