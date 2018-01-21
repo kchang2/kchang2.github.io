@@ -18,9 +18,18 @@ body {
     position: relative;
     margin: 0 auto !important;
     background: #ffffff;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
     max-width: 1200px;
     min-height: 100%;
+}
+
+.header {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
 }
 
 /* images */
@@ -31,7 +40,7 @@ img {
 
 img.centered {
     display: block;
-    width: 80%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,16 +48,6 @@ img.centered {
 iframe {
     background: #ffffff;
     margin-bottom: 40px;
-}
-
-/* classes */
-.header {
-    font-family: "Open Sans", sans-serif;
-    padding-top: 50px;
-    padding-bottom: 28px;
-    font-size: 2em;
-    font-weight: bold;
-    color: #333;
 }
 
 /* IDs */
@@ -65,7 +64,7 @@ iframe {
     overflow: hidden;
 }
 
-#nav {
+/* #nav {
     padding: 1.6rem 0 1.6rem 1.6rem;
     text-align: right;
     font-weight: 600;
@@ -74,10 +73,44 @@ iframe {
     direction: ltr;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    /* border: 1px solid green; */
     margin-left: 50px;
     margin-right: 50px;
     font-size: 0;
+} */
+
+/* classes */
+
+.header-nav {
+    /* padding: 1.6rem 0 1.6rem 1.6rem; */
+    height: 4.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-left: 50px;
+    margin-right: 50px;
+    display:flex;
+    font-size: 0;
+    /* border: 1px solid green; */
+}
+
+#reference-links {
+    display: inline-block;
+    padding-left: 0.1rem;
+    width: 100%;
+    text-align: left;
+    align-self: center;
+    /* border: 1px solid green; */
+}
+
+#reference-links span{
+    padding-right: 0.25rem;
+}
+
+#nav {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    align-self: center;
+    /* padding-right: 1rem; */
+    /* border: 1px solid green; */
 }
 
 #nav a{
@@ -148,6 +181,7 @@ text-align: center;
 
 .column img {
 margin-top: 8px;
+width: 95%;
 vertical-align: middle;
 }
 
@@ -265,8 +299,37 @@ vertical-align: middle;
 
 /*.soc li a {*/
 .soc {
-/*    overflow: hidden;
-    margin:0; padding: 0;*/
+    display: inline-block;
+    *display: inline;
+    zoom: 0.8;
+    font-family: si;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 23px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    /* margin-right: 12px; */
+    color: #ffffff;
+    background-color: none;
+}
+
+/* .soc {
     display: inline-block;
     *display: inline;
     zoom: 1;
@@ -283,7 +346,6 @@ vertical-align: middle;
     overflow:hidden;
     text-decoration:none;
     text-align:center;
-    /*display:block;*/
     position: relative;
     z-index: 1;
     width: 42px;
@@ -296,7 +358,7 @@ vertical-align: middle;
     margin-right: 12px;
     color: #ffffff;
     background-color: none;
-}
+} */
 
 .soc-icon-last{
     margin:0 !important;
@@ -354,7 +416,7 @@ NEED TO ORIENT AND FIX THIS MESS!
 .icon-ext {
     display: inline-block;
     *display: inline;
-    zoom: 1;
+    zoom: 0.8;
     /*display: inline-block;*/
     font-family: 'Glyphter';
     font-style:normal;
@@ -417,7 +479,7 @@ NEED TO ORIENT AND FIX THIS MESS!
 .icon-ext2 {
     display: inline-block;
     *display: inline;
-    zoom: 1;    
+    zoom: 0.8;    
     /*display: inline-block;*/
     font-family: 'Glyphter2';
     font-style:normal;
