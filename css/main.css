@@ -1,0 +1,524 @@
+
+/*** objects  ***/
+/* HTML */
+html {
+    background: #efefef;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Body */
+body {
+    width: 100%;
+    position: relative;
+    margin: 0 auto !important;
+    background: #ffffff;
+    padding-bottom: 4rem;
+    max-width: 1200px;
+    min-height: 100%;
+}
+
+.header {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* images */
+img {
+    width:100%;
+    align: middle;
+}
+
+img.centered {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe {
+    background: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* IDs */
+#index-notes {
+    text-decoration: none;
+    color: #005596;
+}
+
+#main-content {
+    margin-left: 60px;
+    margin-right: 60px;
+    background: #ffffff;
+    /* height: 1000px; */
+    overflow: hidden;
+}
+
+/* #nav {
+    padding: 1.6rem 0 1.6rem 1.6rem;
+    text-align: right;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif !important;
+    color: #f3f3f3 !important;
+    direction: ltr;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 0;
+} */
+
+/* classes */
+
+.header-nav {
+    /* padding: 1.6rem 0 1.6rem 1.6rem; */
+    height: 4.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-left: 50px;
+    margin-right: 50px;
+    display:flex;
+    font-size: 0;
+    /* border: 1px solid green; */
+}
+
+#reference-links {
+    display: inline-block;
+    padding-left: 0.1rem;
+    width: 100%;
+    text-align: left;
+    align-self: center;
+    /* border: 1px solid green; */
+}
+
+#reference-links span{
+    padding-right: 0.25rem;
+}
+
+#nav {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    align-self: center;
+    /* padding-right: 1rem; */
+    /* border: 1px solid green; */
+}
+
+#nav a{
+    /*margin: 0 0;*/
+    text-transform: uppercase;
+    /*font-size: 1.2em;*/
+    font: normal 11pt Arial, sans-serif;
+    font-weight: bold;
+    color: #005596;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /*border: 1px solid green;*/
+}
+
+#nav a:visited, #nav a:link {
+    text-decoration: none;
+    /*color: #ffffff;    */
+}
+
+#nav a:hover{
+    /*text-decoration: underline;*/
+    color: #005596;
+    border-bottom: 2px solid #005596;
+
+}
+
+a.active{
+    /*text-decoration: underline;*/
+    /* color: #005596; */
+    background: #fafdff; /*#f6f6f6;*/
+    border-bottom: 2px solid #005596;
+
+}
+
+
+.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    line-height: 2.5;
+    text-align: center;
+    color: #616161;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    color: #111111;    
+    line-height: 1.5;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+    margin-top: 20px;
+  }
+/* Create two equal columns that sits next to each other */
+.column {
+flex: 20%;
+padding: 0 1%;
+text-align: center;
+}
+
+.column img {
+margin-top: 8px;
+width: 95%;
+vertical-align: middle;
+}
+
+.quote {
+    font-family: "Open Sans", sans-serif;
+    padding: 10%;
+    font-size: 2em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(31, 73, 125);
+}
+
+.captions {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: #063f6b;
+}
+
+.links-old {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6c747b;
+}
+
+.subtitle {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    /*line-height: 1.5;*/
+    font-weight: bold;
+    text-align: center;
+    color: rgb(31, 73, 125);
+}
+
+.subtitle-left {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(31, 73, 125);
+    text-align: left;
+}
+
+.maps {
+    text-align: center;
+}
+
+#intro {
+    margin-bottom: 25px;
+}
+
+.footer {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+}
+
+#email {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    color: #005596;
+    text-align: center;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('../fonts/socicon.eot');
+    src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon.woff') format('woff'),
+         url('../fonts/socicon.ttf') format('truetype'),
+         url('../fonts/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../fonts/socicon.svg) format(svg);
+    }
+}
+
+/*.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}*/
+
+/*.soc li a {*/
+.soc {
+    display: inline-block;
+    *display: inline;
+    zoom: 0.8;
+    font-family: si;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 23px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    /* margin-right: 12px; */
+    color: #ffffff;
+    background-color: none;
+}
+
+/* .soc {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-family:si;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 23px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 12px;
+    color: #ffffff;
+    background-color: none;
+} */
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+
+.soc-initial-color {
+    background-color: #a9a9a9;
+}
+/* 
+can probably conglomerate all the original colors into 1 tag under .soc
+NEED TO ORIENT AND FIX THIS MESS!
+*/
+
+/*.soc-linkedin {
+    background-color: #a9a9a9;
+}*/
+
+.soc-linkedin:before {
+    content:'\e049';
+}
+
+.soc-linkedin:hover {
+    background-color: #0077B5;
+}
+
+.soc-github {
+    /*background-color: #a9a9a9;*/
+    padding-right: 1px;
+    padding-top: 2px;
+}
+
+.soc-github:before {
+    content:'\e030';
+}
+
+.soc-github:hover {
+    background-color: #6cc644;
+}
+              
+@font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* https://glyphter.com/ */
+
+/*.icon li a {*/
+.icon-ext {
+    display: inline-block;
+    *display: inline;
+    zoom: 0.8;
+    /*display: inline-block;*/
+    font-family: 'Glyphter';
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    /*display:block;*/
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 27px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 12px;
+    color: #ffffff;
+    padding-right: 3px;
+    background-color: none;
+}
+
+
+.icon-ladodgers:before{
+    content:'\0043';
+}
+
+.icon-ladodgers{
+    /*background: #a9a9a9;*/
+    font-family: "Glyphter";
+}
+
+.icon-ladodgers:hover {
+    background-color: #1E90FF;
+}
+
+/* Generated by Glyphter (http://www.glyphter.com) on  Sun Nov 12 2017*/
+@font-face {
+    font-family: 'Glyphter2';
+    src: url('../fonts/Glyphter2.eot');
+    src: url('../fonts/Glyphter2.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter2.woff') format('woff'),
+         url('../fonts/Glyphter2.ttf') format('truetype'),
+         url('../fonts/Glyphter2.svg#Glyphter2') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* https://glyphter.com/ */
+
+/*.icon2 li a {*/
+.icon-ext2 {
+    display: inline-block;
+    *display: inline;
+    zoom: 0.8;    
+    /*display: inline-block;*/
+    font-family: 'Glyphter2';
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    /*display:block;*/
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    line-height: 39px;
+    font-size: 32px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 12px;
+    color: #ffffff;
+    padding-right: 12px;
+    background-color: none;
+}
+
+.icon-caltech:before{
+    content:'\0041';
+}
+
+.icon-caltech{
+    /*background: #a9a9a9;*/
+    font-family: "Glyphter2";
+}
+
+.icon-caltech:hover {
+    background-color: #FF6C0C;
+}
