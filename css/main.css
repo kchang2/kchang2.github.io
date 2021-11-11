@@ -50,6 +50,10 @@ iframe {
     margin-bottom: 40px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* IDs */
 #index-notes {
     text-decoration: none;
@@ -242,7 +246,10 @@ vertical-align: middle;
 }
 
 #intro {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    max-width: 80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .footer {
@@ -521,4 +528,21 @@ NEED TO ORIENT AND FIX THIS MESS!
 
 .icon-caltech:hover {
     background-color: #FF6C0C;
+}
+
+/* color hyperlinks/references */
+.stanford-ref {
+    color: #8C1515;
+}
+
+a.stanford-ref:hover {
+    background-color: whitesmoke;
+}
+
+.dodgers-ref {
+    color: #005A9C;
+}
+
+a.dodgers-ref:hover {
+    background-color: whitesmoke;
 }
