@@ -13,7 +13,7 @@ try {
 			<a class="soc soc-initial-color soc-linkedin soc-icon-last" href="https://www.linkedin.com/in/kai-chang-0b5072127" target="_blank"></a>
 		</span>
 		<span>
-			<a class="soc soc-initial-color soc-github soc-icon-last" href="https://github.com/kchang2/" target="_blank"></a>
+			<a class="icon-ext3 soc-initial-color icon-stanford soc-icon-last" href="https://profiles.stanford.edu/kai-chang" target="_blank"></a>
 		</span>
 		<span>
 			<a class="icon-ext soc-initial-color icon-ladodgers soc-icon-last" href="https://www.mlb.com/dodgers/team/front-office" target="_blank"></a>
@@ -30,7 +30,12 @@ try {
 		<a href="./pages/contact.html">Contact</a>
 	</div>
 	`;
+
+	// <span>
+	// 		<a class="soc soc-initial-color soc-github soc-icon-last" href="https://github.com/kchang2/" target="_blank"></a>
+	// 	</span>
 }
+
 catch(err) {
 	/* Create navigation for non-index pages*/
 	document.getElementById("headerPages").innerHTML =
@@ -40,7 +45,7 @@ catch(err) {
 			<a class="soc soc-initial-color soc-linkedin soc-icon-last" href="https://www.linkedin.com/in/kai-chang-0b5072127" target="_blank"></a>
 		</span>
 		<span>
-			<a class="soc soc-initial-color soc-github soc-icon-last" href="https://github.com/kchang2/" target="_blank"></a>
+			<a class="icon-ext3 soc-initial-color icon-stanford soc-icon-last" href="https://profiles.stanford.edu/kai-chang" target="_blank"></a>
 		</span>
 		<span>
 			<a class="icon-ext soc-initial-color icon-ladodgers soc-icon-last" href="https://www.mlb.com/dodgers/team/front-office" target="_blank"></a>
@@ -57,6 +62,10 @@ catch(err) {
 		<a id="Contact" href="contact.html">Contact</a>
 	</div>
 	`;
+
+	// <span>
+	// 		<a class="soc soc-initial-color soc-github soc-icon-last" href="https://github.com/kchang2/" target="_blank"></a>
+	// 	</span>
 
 	var text = document.getElementsByTagName("title")[0]['innerHTML'];
 	document.getElementById(text).className += 'active';
