@@ -614,3 +614,17 @@ a.stanford-ref:hover {
 a.dodgers-ref:hover {
     background-color: whitesmoke;
 }
+
+a.projects {
+    text-decoration: none;
+    color: #6c747b;
+}
+
+a.projects:hover {
+    background-color: whitesmoke;
+}
+
+blockquote {
+    border-left: 4px solid #F0F0F0;
+    padding-left: 5px;
+  }
